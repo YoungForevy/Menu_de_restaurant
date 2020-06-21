@@ -4,7 +4,7 @@
 int menu (int choix)
 {
     
-    printf("=====MENU=====\n1:Sauce poulet\n2:La soupe\n3:Misao\n4:Boisson STAR\n5:Riz\n6:Pack Fastfood: Sandwich, Nuggets et Kebab\n==>Votre choix:");
+    printf("=====MENU=====\n1:Sauce poulet\n2:La soupe\n3:Misao\n4:Boisson STAR\n5:Riz\n6:Pack Fastfood: Sandwich, Nuggets et Kebab\n7:La surprise du Chef\n==>Votre choix:");
     scanf("%d",&choix);
 
     switch (choix)
@@ -27,6 +27,9 @@ int menu (int choix)
         break;
     case 6 :
         printf("Vous avez choisi le pack Fastfood\n");
+        break;
+    case 7:
+        printf("Vous etes un courageux dis donc, vous avez choisi la surprise du Chef\n");
         break;
     default:
        printf("Vous avez entrer un mauvais numero.\n Vueillez reesayer:\n");
