@@ -14,9 +14,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: configure
-      run: ./configure
+      run: ./g++ Menu_v2_fonction.cpp menu_appel.h menu_fonction.cpp -o menu_v2.exe 
     - name: make
-      run: make
+      run: ./menu_v2.exe
     - name: make check
       run: make check
     - name: make distcheck
